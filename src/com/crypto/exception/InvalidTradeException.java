@@ -1,4 +1,4 @@
-package CPT.exception;
+package com.crypto.exception;
 
 public class InvalidTradeException extends Exception {
     public InvalidTradeException(String msg) {
