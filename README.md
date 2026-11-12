@@ -17,7 +17,7 @@ A Java portfolio-tracking project organized around separate application, model, 
 
 ## Run
 
-Import the project into IntelliJ IDEA or Eclipse as an existing Java project. Compile the source tree and run the application entry point under `src/com/crypto/app` (check the package's main class).
+Use JDK 17 or newer. From the repository root, compile and run with:\n\n```bash\nmkdir -p build/classes\nfind src -name '*.java' -print0 | xargs -0 javac -encoding UTF-8 -d build/classes\njava -cp build/classes com.crypto.app.App\n```\n\nRun the application from the repository root so the sample CSV files under `src/com/crypto/app/` are found. You can also import the repository into IntelliJ IDEA or Eclipse as an existing Java project and set the working directory to the repository root.
 
 The repository currently contains IDE-generated metadata and compiled output folders. Prefer rebuilding compiled classes from source rather than relying on committed `bin/` artifacts.
 
